@@ -1,0 +1,621 @@
+datascript {
+	start {
+		name = "North Tower";
+		preview = "Levels/NortTower.png";
+		exit_to[1] = {"red_comeinroom"};
+		skin = "red";
+		way[12] = {		"NNNNNNNNNNNN",
+					"E0UNNNNNNNB0NNN",
+					"M   NNNNNNNN",
+					"   NNSSNNNNNN",
+					"           N",
+					"           N",
+					"  K0NN   NNNN",
+					"  NNT1   NT1NN",
+					"        NNNN",
+					"NNNNNNDDNNNN",
+					"NNNNNNDDNNNN",
+					"NNNNNNDDNNNN"
+				};
+		walls[4] = { "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPE0PPPPPP",
+					 "PWPPPPWP"
+				};
+		mebles {			
+			stillage
+			{y = 11; x = 4; r = 180;}
+			flower
+			{y = 3; x = 11; r = 0;}
+			flower
+			{y = 5; x = 11; r = 0;}
+		}
+	}
+	red_comeinroom {
+		name = "Red Anteroom";
+		preview = "Levels/RedComeInRoom.png";
+		exit_to[2] = {"red_bedroom", "green_eatroom"};
+		skin = "red";
+		way[12] = {		"NNNN     NNN",
+					"         NNN",
+					"   N    MNNN",
+					"   NNNNNNNNN",
+					"   NNNN     ",
+					"   NNT1NNE0U   ",
+					"   NNNNN    ",
+					"M  NNNB0N    ",
+					"T1DNNNNNNE0D   ",
+					"NNNNNNNN    ",
+					"NNNNSSNNN    ",
+					"NNNNNNNNM   "
+				};
+		walls[4] = { "PPPPPE0PPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPWPPPPP",
+					 "PPPPPPE1PPP"
+				};
+		mebles {			
+			flower
+			{y = 0; x = 11; r = 0;}
+			flower
+			{y = 11; x = 0; r = 0;}
+		}
+	}
+	red_bedroom {
+		name = "Red Bedroom";
+		exit_to[1] = {"guestroom"};
+		skin = "red";
+		preview = "Levels/RedBedRoom.png";
+		way[12] = {	"NNNNNNNNNNNN",
+					"NNNNNNNNNNNN",
+					"M NNNNNNNNNN",
+					"  NNNSNNNNNNN",
+					"           N",					
+					"  K0NN      N",
+					"  NNT1      N",
+					"         NNN",
+					"NNDDDDDDDNNN",
+					"NNNNNNNNNNNN",
+					"         NNN",
+					"T1NNNNN   NNN"
+				};
+		walls[4] = { "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPE0PPPPPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			stillage
+			{y = 11; x = 4; r = 180;}
+			bed
+			{y = 5; x = 0; r = 0;}
+		}
+	}
+	guestroom {
+		name = "Guest Room";		
+		exit_to[2] = {"blue_bedroom", "south_cor"};
+		skin = "blue";
+		preview = "Levels/GuestRoom.png";
+		way[12] = {	"NNNN        ",
+					"NNNN        ",
+					"NNNN        ",
+					"NNNN       M",
+					"NNNN      T1N",					
+					"   E0D T1K0DDDNN",
+					"          NN",
+					"         MNN",
+					"NNNNNB0NNNNNN",
+					"NNNNNNNNNNNN",
+					"NNNNNSSNNNNNN",
+					"NNNNNNNNNNNN"
+				};
+		walls[4] = { "PE0PPE1PPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			bed
+			{y = 1; x = 10; r = 270;}
+			bed
+			{y = 10; x = 10; r = 270;}
+			mvclock
+			{y = 6; x = 11; r = 270;}
+		}
+	}
+	green_eatroom {
+		name = "Green Dining-room";		
+		exit_to[1] = {"work_room"};
+		skin = "green";
+		preview = "Levels/GreenEatRoom.png";
+		way[12] = {		"NNN  MNNT3NN ",
+					"MT3          ",
+					"            ",
+					"           M",
+					"NNNDDDNNNNNN",					
+					"NNT2   K0NNNNN",
+					"NNN   NNNNNN",
+					" DD   NT1NNNN",
+					"DD M M NNT2NN",
+					"T1D     NN   ",
+					"NNNNNNNNN   ",
+					"NNNSNNNNNN   "
+				};
+		walls[4] = { "PPPE0PPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPWPPPPP"
+				};
+		mebles {			
+			bigtable
+			{y = 0; x = 10; r = 0;}
+			bigtable
+			{y = 8; x = 5; r = 0;}
+			throne
+			{y = 2; x = 10; r = 180;}
+			throne
+			{y = 2; x = 11; r = 180;}
+			throne
+			{y = 8; x = 4; r = 90;}
+			throne
+			{y = 7; x = 5; r = 0;}
+			throne
+			{y = 7; x = 6; r = 0;}
+			throne
+			{y = 8; x = 7; r = 270;}
+		}
+	}
+	blue_library {
+		name = "Blue Library";		
+		exit_to[1] = {"central_cor"};
+		skin = "blue";
+		preview = "Levels/BlueLibrary.png";
+		way[12] = {		"DDDNNNNNNDDD",
+					"D    N     D",
+					"DDNNN NNNNDD",
+					"DMN D D  NMD",
+					"NNN DK0D  NNN",					
+					"N        NNN",
+					"DNNNNSNNNNNDD",
+					"NNNNNNM     ",
+					"NNNNNNNNNNNN",
+					"NN       MMN",
+					"D           ",
+					"B0DN NE0UNNNNNN"
+				};
+		walls[4] = { "PPPPWPPPPP",
+					 "PPPWPPPPPP",
+					 "PPPPPPE0PPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			stillage
+			{y = 2; x = 2; r = 270;}
+			stillage
+			{y = 7; x = 2; r = 270;}
+			stillage
+			{y = 9; x = 5; r = 270;}
+			stillage
+			{y = 0; x = 7; r = 270;}
+			stillage
+			{y = 2; x = 7; r = 270;}
+			stillage
+			{y = 4; x = 7; r = 270;}
+			stillage
+			{y = 0; x = 8; r = 0;}
+			stillage
+			{y = 11; x = 8; r = 180;}
+			stillage
+			{y = 8; x = 11; r = 270;}
+			stillage
+			{y = 10; x = 11; r = 270;}
+			mvclock
+			{y = 5; x = 0; r = 90;}
+		}
+	}
+	tea_room {
+		name = "Tea-room";		
+		exit_to[1] = {"worker_room"};
+		skin = "green";
+		preview = "Levels/TeaRoom.png";
+		way[12] = {		"SNNNNNN   NK0N",
+					"NNB0NNNN NNNN",
+					"M  E0DNNN NNNN",
+					"   E0U    NNNN",
+					"E1U  E0DNNNNNNNN",					
+					"NNB0NNNNNNNNN",
+					"B1NNNNNNNNN  ",
+					"NNNNNNNNNN  ",
+					"NNNNNNNNNN  ",
+					"N E2U   NNNN  ",
+					"N  B3  NNB2N  ",
+					"NM  E3U NNNN  "
+				};
+		walls[4] = { "PPWPPWPP",
+					 "PPPPPPPPPPPP",
+					 "PPE0PPPPPPP",
+					 "PPPPWPPPPP"
+				};
+		mebles {			
+			bigtable
+			{y = 8; x = 4; r = 0;}
+			throne
+			{y = 7; x = 4; r = 0;}
+			throne
+			{y = 7; x = 5; r = 0;}
+			throne
+			{y = 8; x = 3; r = 90;}
+			throne
+			{y = 9; x = 3; r = 90;}
+        		mvclock
+			{y = 8; x = 11; r = 270;}
+		}
+	}
+	work_room {
+		name = "Private Office";		
+		exit_to[1] = {"ost_cor"};
+		skin = "blue";
+		preview = "Levels/WorkRoom.png";
+		way[12] = {		"   NNT1NNNNNN",
+					" K0 NNNNN    ",
+					"   M  NN    ",
+					"NN    NN    ",
+					"NN    NN    ",					
+					"NN    MN    ",
+					"NN    NNDB0E0UB0",
+					"NN    D  E0D E1D",
+					"NN    NNDB1E1DB1",
+					"NN     N    ",
+					"NN NM NN    ",
+					"NNT1NSSNNN    "
+				};
+		walls[4] = { "PPPPPPPPWP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPE0",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			stillage
+			{y = 6; x = 0; r = 270;}
+			mvclock
+			{y = 4; x = 0; r = 90;}
+			table
+			{y = 1; x = 10; r = 0;}
+			throne
+			{y = 0; x = 10; r = 0;}
+		}
+	}
+	west_cor {
+		name = "West Passage";		
+		exit_to[3] = {"tea_room", "worker_room", "blue_eatroom"};
+		skin = "red";
+		preview = "Levels/WestCor.png";
+		way[12] = {		"   B0 N NB1B2 N",
+					"K0 NN N NNN N",
+					"NE0DN         ",
+					"DE0DNB3 E3U     N",
+					"DE0UNN      E3U ",					
+					"DE0DB0NE1U E2U    N",
+					"DE0UNN    E1D  N",
+					"DE0DNN       N",
+					"ME0UNNM    E0U N",
+					"NNNB1 E2U     B1",
+					"NSSNN         ",
+					"NNNN B2NNNB0 N"
+				};
+		walls[4] = { "PPPPPE1PPPP",
+					 "PPPPPPPPPE0",
+					 "PPPPPPPPPPPP",
+					 "PPPE2PPPPPP"
+				};
+		mebles {			
+			mvclock
+			{y = 0; x = 2; r = 0;}
+			flower
+			{y = 2; x = 3; r = 0;}
+		}
+	}
+	blue_eatroom {
+		name = "Blue Dining-room";		
+		exit_to[1] = {"blue_library"};
+		skin = "blue";
+		preview = "Levels/BlueEatRoom.png";
+		way[12] = {		"E2UD NNN NNNN ",
+					"DT2DNNN N    ",
+					" D NB1NDN   E1U",
+					"DB2DNNNNN    ",
+					"DT2DNNNNN    ",					
+					" D NNT1NNNK0N ",
+					"NNN NSSNNNNN ",
+					"NNNDNNNN    ",
+					"NNNN N N    ",
+					"NNNN E0U E0D    ",
+					"E1DN D N NNNNM",
+					"T1NDB1 N NB0NNN"
+				};
+		walls[4] = { "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPE0PPPPP",
+					 "PPWPPWPP"
+				};
+		mebles {			
+			bigtable
+			{y = 4; x = 3; r = 0;}
+			bigtable
+			{y = 6; x = 5; r = 0;}
+			throne
+			{y = 3; x = 4; r = 0;}
+			throne
+			{y = 4; x = 5; r = 270;}
+		}
+	}
+	ost_cor {
+		name = "Ost Passage";		
+		exit_to[1] = {"ost_tower"};
+		skin = "red";
+		preview = "Levels/OstCor.png";
+		way[12] = {		"NN      NNN ",
+					" T3E1DNNE0D  NN  ",
+					" E1U D T1DDNSS  ",
+					"DD NNN     E2U",
+					"D    NT4NNNN ",					
+					"DNDN N      ",
+					"M T2DDT1DT2K0   ",
+					"   D D D    ",
+					"   B0DNNN    ",
+					"  N      B1N ",
+					" DN      DT3M",
+					" DN NNT4NNB1B2 "
+				};
+		walls[4] = { "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPE0PPPPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			flower
+			{y = 1; x = 5; r = 0;}
+			flower
+			{y = 10; x = 0; r = 0;}
+
+		}
+	}
+	ost_tower {
+		name = "Ost Tower";		
+		exit_to[1] = {"work_room"};
+		skin = "green";
+		preview = "Levels/OstTower.png";
+		way[12] = {		"DNE1UNNNDNNN  ",
+					"N  N     D  ",
+					"NK0 N NNN D  ",
+					" N NNT2 N E2U  ",
+					"T2N   NNNNNNN",					
+					"   DDE0U   N D",
+					"   DT1SSDB0E0DT1NB1",
+					"    D    N  ",
+					"N  N N   NB2N",
+					" E2U E1U     M  ",
+					"N         NN",
+					"NN N NNNN NN"
+				};
+		walls[4] = { "PPPPPPPE0PP",
+					 "PPPPPWPPPP",
+					 "PPPPWPPPPP",
+					 "PPPPPPPPPPPP"
+				};
+	}
+	red_library {
+		name = "Red Library";		
+		exit_to[1] = {"ost_cor"};
+		skin = "red";
+		preview = "Levels/RedLibrary.png";
+		way[12] = {		"   N   NNNNN",
+					"   N   NNNNN",
+					"NNNDNNN NNNN",
+					"SSN N  D NNB1N",
+					"NN NNDK0 NNNN",					
+					"NN     NNNDN",
+					"NN     N  NN",
+					"T1N        NN",
+					"NN     E0DM NT1",
+					"NNN    NNNNN",
+					"ND     NM NN",
+					"NB0     E1D  NN"
+				};
+		walls[4] = { "PPE0PPPPPPP",
+					 "PPPPWPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			stillage
+			{y = 11; x = 0; r = 0;}
+			stillage
+			{y = 11; x = 5; r = 0;}
+			stillage
+			{y = 11; x = 9; r = 0;}
+			stillage
+			{y = 0; x = 8; r = 0;}
+			stillage
+			{y = 0; x = 10; r = 0;}
+			table
+			{y = 7; x = 0; r = 90;}
+			throne
+			{y = 7; x = 1; r = 270;}
+		}
+	}
+	worker_room {
+		name = "Maid Room";		
+		exit_to[1] = {"blue_eatroom"};
+		skin = "blue";
+		preview = "Levels/WorkerRoom.png";
+		way[12] = {		"NN NNB3NNB2 NN",
+					"NN NNNNNN NN",
+					"       E3D    ",
+					"T2E2U NT2     NB3",
+					"NN E0U      NN",					
+					"B0N D        ",
+					"NN E0UT1     NN",
+					"T1D   N    NN",
+					"B1N      T3 NB2",
+					"    E1D M     ",
+					"NN NNNNNB1 T3N",
+					"NN NNSSNNNNNK0"
+				};
+		walls[4] = { "PPPPPWPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPE0PPPPP"
+				};
+		mebles {			
+		 	bigtable
+			{y = 3; x = 0; r = 0;}
+			bad
+			{y = 0; x = 0; r = 90;}
+			bad
+			{y = 0; x = 10; r = 270;}
+			throne
+			{y = 5; x = 1; r = 180;}
+			flower
+			{y = 9; x = 11; r = 0;}
+			flower
+			{y = 11; x = 10; r = 0;}
+
+		}
+
+	}
+	blue_bedroom {
+		name = "Blue Bedroom";
+		preview = "Levels/BlueBedRoom.png";
+		exit_to[2] = {"blue_library", "south_tower"};
+		skin = "blue";
+		way[12] = {		"   NNN      ",
+					"   NNNE0DDT1   ",
+					"     N      ",
+					"     N   K0D ",
+					"NNNNNN   T1B0 ",
+					"NNM  N      ",
+					"NN   B0 E1U   M",
+					" M   SSB1NNNNN",
+					"     NNNNNNN",
+					"T2NE2DB2 NNNNNNN",
+					"     NT2NNNNN",
+					"     NNNNNNN"
+				};
+		walls[4] = { "PPE0PPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PE1PPPPPPPP",
+					 "PPWPPWPP"
+				};
+		mebles {			
+			stillage
+			{y = 4; x = 0; r = 90;}
+			table
+			{y = 5; x = 2; r = 180;}
+			bed
+			{y = 10; x = 10; r = 0;}
+		}
+	}
+	south_cor {
+		name = "South Passage";
+		preview = "Levels/SouthCor.png";
+		exit_to[2] = {"blue_bedroom","south_tower"};
+		skin = "green";
+		way[12] = {		"E0D E0U   NN    ",
+					"     NNN    ",
+					"     NNN    ",
+					"     NNN    ",
+					" N   SSNN    ",
+					" B0 MMNNN   E1U",
+					"NNNNNNNN    ",
+					"NNNNNNNB1    ",
+					"NNNM       E1D",
+					"NNN     T1   ",
+					"NT1N         ",
+					"DK0N         "
+				};
+		walls[4] = { "PPPPPPPPE0P",
+					 "PE1PPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			stillage
+			{y = 0; x = 8; r = 0;}
+			flower
+			{y = 3; x = 6; r = 0;}
+			flower
+			{y = 1; x = 4; r = 0;}
+			mvclock
+			{y = 2; x = 11; r = 270;}
+		}
+	}
+	central_cor {
+		name = "Central Passage";
+		preview = "Levels/CentralCor.png";
+		exit_to[1] = {"west_cor"};
+		skin = "green";
+		way[12] = {		"NNNNNNNNNNNN",
+					"NNNN        ",
+					"NNNN  NNN NN",
+					"B0NN    MN NN",
+					" NNNNN  N NN",
+					"    E0D   N NN",
+					" NN NNNMB0 NN",
+					"NN    NNN   ",
+					"NM N NN     ",
+					"N  M  N N N ",
+					"B1 N N N NMN ",
+					"SSMN   N N E1U "
+				};
+		walls[4] = { "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPE0PPP",
+					 "PPPPPPPPPPPP"
+				};
+		mebles {			
+			bigtable
+			{y = 0; x = 1; r = 0;}
+			throne
+			{y = 1; x = 3; r = 270;}
+			flower
+			{y = 6; x = 6; r = 0;}
+			mvclock
+			{y = 7; x = 7; r = 0;}
+		}
+	}
+	south_tower {
+		name = "South Tower";
+		preview = "Levels/SouthTower.png";
+		exit_to[1] = {"red_library"};
+		skin = "green";
+		way[12] = {		"NNNNNNNNNNNN",
+					"NNNNNNNNNNNN",
+					"NNNDD NNNNNN",
+					"NNNDN B0NNNNN",
+					"NNNDD  E0D  E1U ",
+					"NNNNN B1N NN ",
+					"NNNNN NN NNN",
+					"NNMNN NN NNN",
+					"NSSMNN NN NNN",
+					"   N   N NNN",
+					" M   NNN NNN",
+					"   NNNNN NNN"
+				};
+		walls[4] = { "PPPPPPPPPPPP",
+					 "PPPPPPPPPPPP",
+					 "PPPPPPPE0PP",
+					 "PPPPWPPPPP"
+				};
+		mebles {			
+			bigtable
+			{y = 0; x = 5; r = 0;}
+			flower
+			{y = 3; x = 6; r = 0;}
+			flower
+			{y = 4; x = 6; r = 0;}
+			throne
+			{y = 2; x = 6; r = 180;}
+		}
+	}
+}
