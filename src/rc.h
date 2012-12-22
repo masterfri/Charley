@@ -4,6 +4,7 @@
 #define _RC_REGISTRY_H_
 
 #include "include.h"
+#include "rc-conf.h"
 #include "3dml.h"
 
 #define MODEL_HERO 			0
@@ -64,8 +65,8 @@
 #define GI_RECT_KEY4		89,64,26,29
 #define GI_RECT_MAP_CURSOR	122,0,192,122
 
-#define LOADING_IMAGE		"Images/loading.png"
-#define ICON_IMAGE 			"Images/icon.png"
+#define LOADING_IMAGE		RC_ROOT"Images/loading.png"
+#define ICON_IMAGE 			RC_ROOT"Images/icon.png"
 
 class RcRegistry
 {

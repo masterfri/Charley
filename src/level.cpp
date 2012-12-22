@@ -19,7 +19,7 @@ Level::Level()
 	hero = new Hero(this);
 	spectator = new Spectator(hero);
 	
-	if (levels_data.Read((char *)"Levels/levels.ds") != 0) {
+	if (levels_data.Read((char *)RC_ROOT"Levels/levels.ds") != 0) {
 		fprintf(stderr, "Error: Data from `Levels/levels.ds` was not loaded \n");
 		Controller::getInstance()->QuitGame(1);
 	}
@@ -75,7 +75,7 @@ GLvoid Level::InitWalls()
 GLvoid Level::CreateLevelsPreviews()
 {
 	GLushort i = 0, j;
-	char file[256], path[64];
+	char file[256], path[64], tmp[256];
 	levels_data.BeginEnumeration(NULL);
 	levels_count = 0;
 	while (levels_data.Enumerate(0, 0)) {
@@ -89,7 +89,8 @@ GLvoid Level::CreateLevelsPreviews()
 		sprintf(path, "%s.name", levels[i].szName);
 		levels_data.ExtractData((char*)path, levels[i].szTitle, 0);
 		sprintf(path, "%s.preview", levels[i].szName);
-		levels_data.ExtractData((char*)path, file, 0);
+		levels_data.ExtractData((char*)path, tmp, 0);
+		sprintf(file, "%s%s", RC_ROOT, tmp);
 		levels[i].picture = IMG_Load(file);
 		if (! levels[i].picture) {
 			fprintf(stderr, "Error: Image `%s` not found \n", file);

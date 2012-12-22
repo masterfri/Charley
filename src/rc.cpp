@@ -1,57 +1,57 @@
 #include "rc.h"
 
 char* szModelFileNames[] = {
-	(char*)"Modeles/hero.3dm",	// 		MODEL_HERO 			0
-	(char*)"Modeles/block1.3dm", // 	MODEL_BL_NORMAL 	1
-	(char*)"Modeles/block2.3dm", // 	MODEL_BL_CRACKED 	2
-	(char*)"Modeles/block3.3dm", //		MODEL_BL_TRANSPORT 	3
-	(char*)"Modeles/teleport.3dm", //	MODEL_TELEPORT 		4
-	(char*)"Modeles/door.3dm",	//		MODEL_EXIT_DOOR 	5
-	(char*)"Modeles/wall.3dm", //		MODEL_WALL 			6
-	(char*)"Modeles/window.3dm", //		MODEL_WINDOW		7
-	(char*)"Modeles/elevator.3dm", //	MODEL_ELEVATOR		8
-	(char*)"Modeles/button.3dm", //		MODEL_BUTTON		9
-	(char*)"Modeles/table.3dm", //		MODEL_TABLE			10
-	(char*)"Modeles/bigtable.3dm", // 	MODEL_BIG_TABLE		11
-	(char*)"Modeles/chair.3dm", //		MODEL_CHAIR			12
-	(char*)"Modeles/flower.3dm", //		MODEL_FLOWER		13
-	(char*)"Modeles/clock.3dm", //		MODEL_CLOCK			14
-	(char*)"Modeles/bookcase.3dm", //	MODEL_BOOKCASE		15
-	(char*)"Modeles/key.3dm", //		MODEL_KEY			16
-	(char*)"Modeles/base.3dm", //		MODEL_BASE			17
-	(char*)"Modeles/bed.3dm", //		MODEL_BED			18
-	(char*)"Modeles/wall2.3dm" //		MODEL_WALL2			19
+	(char*)RC_ROOT"Models/hero.3dm",	// 		MODEL_HERO 			0
+	(char*)RC_ROOT"Models/block1.3dm", // 		MODEL_BL_NORMAL 	1
+	(char*)RC_ROOT"Models/block2.3dm", // 		MODEL_BL_CRACKED 	2
+	(char*)RC_ROOT"Models/block3.3dm", //		MODEL_BL_TRANSPORT 	3
+	(char*)RC_ROOT"Models/teleport.3dm", //	MODEL_TELEPORT 		4
+	(char*)RC_ROOT"Models/door.3dm",	//		MODEL_EXIT_DOOR 	5
+	(char*)RC_ROOT"Models/wall.3dm", //		MODEL_WALL 			6
+	(char*)RC_ROOT"Models/window.3dm", //		MODEL_WINDOW		7
+	(char*)RC_ROOT"Models/elevator.3dm", //	MODEL_ELEVATOR		8
+	(char*)RC_ROOT"Models/button.3dm", //		MODEL_BUTTON		9
+	(char*)RC_ROOT"Models/table.3dm", //		MODEL_TABLE			10
+	(char*)RC_ROOT"Models/bigtable.3dm", // 	MODEL_BIG_TABLE		11
+	(char*)RC_ROOT"Models/chair.3dm", //		MODEL_CHAIR			12
+	(char*)RC_ROOT"Models/flower.3dm", //		MODEL_FLOWER		13
+	(char*)RC_ROOT"Models/clock.3dm", //		MODEL_CLOCK			14
+	(char*)RC_ROOT"Models/bookcase.3dm", //	MODEL_BOOKCASE		15
+	(char*)RC_ROOT"Models/key.3dm", //			MODEL_KEY			16
+	(char*)RC_ROOT"Models/base.3dm", //		MODEL_BASE			17
+	(char*)RC_ROOT"Models/bed.3dm", //			MODEL_BED			18
+	(char*)RC_ROOT"Models/wall2.3dm" //		MODEL_WALL2			19
 };
 
 struct FontConf {
 	char* szName;
 	GLint size;
 } fontConfigs[] = {
-	{(char*)"Fonts/EagleLake-Regular.ttf", 24}, 	// 	FONT_TITLE		0
-	{(char*)"Fonts/vinque.ttf", 18},		 		//	FONT_MENUITEMS	1
-	{(char*)"Fonts/EagleLake-Regular.ttf", 10}, 	// 	FONT_VERSION	2
+	{(char*)RC_ROOT"Fonts/EagleLake-Regular.ttf", 24}, 	// 	FONT_TITLE		0
+	{(char*)RC_ROOT"Fonts/vinque.ttf", 18},		 		//	FONT_MENUITEMS	1
+	{(char*)RC_ROOT"Fonts/EagleLake-Regular.ttf", 10}, 	// 	FONT_VERSION	2
 };
 
 char* szImageFileNames[] = {
-	(char*)"Images/main.png",	// 		IMAGE_MAIN_SCREEN 	0
-	(char*)"Images/pause.png", // 		IMAGE_PAUSE_SCREEN 	1
-	(char*)"Images/title.png", // 		IMAGE_TITLE_SCREEN 	2
-	(char*)"Images/credits.png", //		IMAGE_CREDITS 		3
-	(char*)"Images/gui-items.png" //	IMAGE_GUI_ITEMS		4
+	(char*)RC_ROOT"Images/main.png",	// 		IMAGE_MAIN_SCREEN 	0
+	(char*)RC_ROOT"Images/pause.png", // 		IMAGE_PAUSE_SCREEN 	1
+	(char*)RC_ROOT"Images/title.png", // 		IMAGE_TITLE_SCREEN 	2
+	(char*)RC_ROOT"Images/credits.png", //		IMAGE_CREDITS 		3
+	(char*)RC_ROOT"Images/gui-items.png" //	IMAGE_GUI_ITEMS		4
 };
 
 char* szMusicFileNames[] = {
-	(char*)"Sounds/shelkunchik.ogg",	// 	MUSIC_BACKGROUND 		0
+	(char*)RC_ROOT"Sounds/shelkunchik.ogg",	// 	MUSIC_BACKGROUND 		0
 };
 
 char* szSoundFileNames[] = {
-	(char*)"Sounds/button_down.wav",	// 	SOUND_BUTTON_DOWN 		0
-	(char*)"Sounds/button_up.wav",		// 	SOUND_BUTTON_UP 		1
-	(char*)"Sounds/door.wav",			// 	SOUND_DOOR		 		2
-	(char*)"Sounds/rolling.wav",		// 	SOUND_ROLLING	 		3
-	(char*)"Sounds/stone_col.wav",		// 	SOUND_STONE_COLLISION 	4
-	(char*)"Sounds/stone_break.wav",	// 	SOUND_STONE_BREAK 		5
-	(char*)"Sounds/teleport.wav"		// 	SOUND_TELEPORT	 		6
+	(char*)RC_ROOT"Sounds/button_down.wav",	// 	SOUND_BUTTON_DOWN 		0
+	(char*)RC_ROOT"Sounds/button_up.wav",		// 	SOUND_BUTTON_UP 		1
+	(char*)RC_ROOT"Sounds/door.wav",			// 	SOUND_DOOR		 		2
+	(char*)RC_ROOT"Sounds/rolling.wav",		// 	SOUND_ROLLING	 		3
+	(char*)RC_ROOT"Sounds/stone_col.wav",		// 	SOUND_STONE_COLLISION 	4
+	(char*)RC_ROOT"Sounds/stone_break.wav",	// 	SOUND_STONE_BREAK 		5
+	(char*)RC_ROOT"Sounds/teleport.wav"		// 	SOUND_TELEPORT	 		6
 };
 
 RcRegistry * RcRegistry::instance = NULL;
